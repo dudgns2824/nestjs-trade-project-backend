@@ -1,7 +1,7 @@
 ## 폴더 구조 예시 (헥사고널 아키텍쳐 + 도메인 주도 개발 방식)
 
-src/
-│── domain/ 도메인 계층 (비즈니스 로직)
+src/      
+│── domain/ 도메인 계층 (비즈니스 로직)      
 │   ├── 도메인 명/
 │   │   ├── response/ response dto model
 │   │   ├── request/ 요청 dto model
