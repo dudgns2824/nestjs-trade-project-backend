@@ -16,7 +16,7 @@ src/
 │   │   ├── repository/ 유저 도메인 에서의 DB 통신 구현체 (adapter out 역할)      
 │   │   ├── entity/ entity typeORM entity      
 │   │   ├── external-api/ 유저 도메인 에서의 외부 API 통신      
-│   │   ├── websocket/ 유저 도메인 에서의 웹소켓 API 통신
+│   │   ├── websocket/ 유저 도메인 에서의 웹소켓 API 통신      
 │   │   │   ├── rest-api/ rest-api 엔드포인트     
 │   │   │   ├── config/ 웹소켓의 gateway 및 설정, 인터셉터 등의 파일이 존재하는 폴더.      
 │      
