@@ -6,6 +6,7 @@ src/
 │   │   ├── dto/ response dto model      
 │   │   │   ├── response/ response dto model      
 │   │   │   ├── request/ 요청 dto model      
+│   │   ├── enumeration/ enum 모음      
 │   │   ├── port/ 포트       
 │   │   │   ├── in/ in-포트      
 │   │   │   ├── out/ out-포트      
