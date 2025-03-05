@@ -1,5 +1,5 @@
 import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
-import { UserRole } from '../enumeration/user-role';
+import { UserRoleType } from '../enumeration/user-role.type';
 
 @Entity('users')
 export class UserEntity {
@@ -31,6 +31,6 @@ export class UserEntity {
   headerImgUrl: string;
 
   // 유저 권한
-  @Column({ name: 'user_role', nullable: true, enum: UserRole })
-  userRole: UserRole;
+  @Column({ name: 'user_role', nullable: true, enum: UserRoleType })
+  userRole: UserRoleType;
 }

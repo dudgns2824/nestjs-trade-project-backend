@@ -1,7 +1,11 @@
-import { QueryJwtService } from '../../../service/query/query-jwt.service';
-import { UserEntity } from '../../../../user/entity/user.entity';
+import { TokenType } from '../../../enumeration/token.type';
 
 export interface QueryJwtUseCase {
-  generateToken(userIdx: number, userName: string): string;
+  generateToken(
+    userIdx: number,
+    userName: string,
+    tokenType: TokenType,
+  ): string;
+
   verifyToken(token: string): any;
 }

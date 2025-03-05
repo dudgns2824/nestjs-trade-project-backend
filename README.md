@@ -20,9 +20,10 @@ src/
 │   │   │   ├── query      
 │   │   │   ├── command      
 │      
-│── infrastructure/ 인프라 계층 (DB, 외부 API, WebSocket)      
+│── infrastructure/ 인프라 계층 (DB, SECURITY 설정, 외부 API, WebSocket)      
 │   ├── 도메인 명/      
 │   │   ├── repository/ 유저 도메인 에서의 DB 통신 구현체 (adapter out 역할)      
+│   │   ├── security/ jwt 모듈 등 보안 관련 설정      
 │   │   ├── external-api/ 유저 도메인 에서의 외부 API 통신      
 │   │   ├── websocket/ 유저 도메인 에서의 웹소켓 API 통신      
 │   │   │   ├── config/ 웹소켓의 gateway 및 설정, 인터셉터 등의 파일이 존재하는 폴더.      
@@ -51,7 +52,7 @@ query-jwt.use-case.ts -> QueryJwtUseCase
 ### 파일 이름이 두 의미로 띄워서 만들어야 할 경우
 ```
 example) userRole.ts      
- -> user-role.ts 중간에 하이픈 넣어서 명명      
+ -> user-role.type.ts 중간에 하이픈 넣어서 명명      
 database는 한 단어이므로 database.ts      
 ```
 
@@ -61,4 +62,19 @@ CQRS(Command Query Responsibility Segregation) 패턴을 적용.
 
 Command (생성, 수정, 삭제): 상태를 변경하는 로직을 포함      example) command-jwt.use-case.ts
 Query (조회, 읽기): 데이터 조회만 담당      example) query-jwt.use-case.ts
+```
+
+### dto request, response 명명 규칙
+```
+request -> request-이름.dto.ts      
+response -> response-이름.dto.ts      
+```
+
+### enumeration 명명 규칙
+```
+이름.type.ts 으로 명명 ex) user-role.type.ts      
+export enum UserRoleType {      
+  ADMIN = 'admin',      
+  USER = 'user',      
+}      
 ```
