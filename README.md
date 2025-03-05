@@ -34,9 +34,25 @@ src/
 │── app.module.ts      
 ```
 
-## 명명 규칙
+## 명명 규칙 (파일명)
+
+### 클래스 명명 규칙
 ```
-파일 이름이 두 의미로 띄워서 만들어야 할 경우 example) userRole.ts      
+기본적으로 ts 앞까지 붙여서 파일 생성 user.entity.ts -> UserEntity      
+query-jwt.use-case.ts -> QueryJwtUseCase      
+```
+
+### 파일 이름이 두 의미로 띄워서 만들어야 할 경우
+```
+example) userRole.ts      
  -> user-role.ts 중간에 하이픈 넣어서 명명      
 database는 한 단어이므로 database.ts      
+```
+
+### port 인터페이스 명명 규칙
+```
+CQRS(Command Query Responsibility Segregation) 패턴을 적용.      
+
+Command (생성, 수정, 삭제): 상태를 변경하는 로직을 포함      example) command-jwt.use-case.ts
+Query (조회, 읽기): 데이터 조회만 담당      example) query-jwt.use-case.ts
 ```
