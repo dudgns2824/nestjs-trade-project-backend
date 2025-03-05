@@ -49,7 +49,7 @@ example) userRole.ts
 database는 한 단어이므로 database.ts      
 ```
 
-### port 인터페이스 명명 규칙
+### 포트와 상속받아 사용하는 구현체에는 CQRS 패턴을 적용 권고
 ```
 CQRS(Command Query Responsibility Segregation) 패턴을 적용.      
 
