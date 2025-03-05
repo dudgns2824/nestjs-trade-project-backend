@@ -2,9 +2,10 @@
 
 src/      
 │── domain/ 도메인 계층 (비즈니스 로직)      
-│   ├── 도메인 명/      
-│   │   ├── response/ response dto model      
-│   │   ├── request/ 요청 dto model      
+│   ├── 도메인 명/     
+│   │   ├── dto/ response dto model      
+│   │   │   ├── response/ response dto model      
+│   │   │   ├── request/ 요청 dto model      
 │   │   ├── port/ 포트       
 │   │   │   ├── in/ in-포트      
 │   │   │   ├── out/ out-포트      
@@ -15,7 +16,8 @@ src/
 │   │   ├── repository/ 유저 도메인 에서의 DB 통신 구현체 (adapter out 역할)      
 │   │   ├── entity/ entity typeORM entity      
 │   │   ├── external-api/ 유저 도메인 에서의 외부 API 통신      
-│   │   ├── websocket/ 유저 도메인 에서의 웹소켓 API 통신      
+│   │   ├── websocket/ 유저 도메인 에서의 웹소켓 API 통신
+│   │   │   ├── rest-api/ rest-api 엔드포인트     
 │   │   │   ├── config/ 웹소켓의 gateway 및 설정, 인터셉터 등의 파일이 존재하는 폴더.      
 │      
 │── interface/ 컨트롤러 모음 (어댑터의 in 역할)      
