@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { JwtService } from '@nestjs/jwt';
-import { QueryJwtUseCase } from '../port/in/query-jwt.use-case';
+import { QueryJwtUseCase } from '../../port/in/query/query-jwt.use-case';
 
 @Injectable()
 export class QueryJwtService implements QueryJwtUseCase {

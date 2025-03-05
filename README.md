@@ -10,8 +10,12 @@ src/
 │   │   ├── entity/ 해당 도메인들에 관한 typeORM entity 모음      
 │   │   ├── enumeration/ enum 모음      
 │   │   ├── port/ 포트       
-│   │   │   ├── in/ in-포트      (query(command)-이름.use-case.ts 등의 인터페이스)
+│   │   │   ├── in/ in-포트      
+│   │   │   │   ├── query      (query-이름.use-case.ts 등의 인터페이스)      
+│   │   │   │   ├── command    (command-이름.use-case.ts 등의 인터페이스)      
 │   │   │   ├── out/ out-포트      (query(command)-이름.repository.ts 등의 인터페이스)
+│   │   │   │   ├── query      (query-이름.repository.ts 등의 인터페이스)
+│   │   │   │   ├── command    (command-이름.repository.ts 등의 인터페이스)
 │   │   ├── service/ 서비스 (비즈니스 로직 구현체 폴더)      
 │   │   │   ├── query      
 │   │   │   ├── command      
