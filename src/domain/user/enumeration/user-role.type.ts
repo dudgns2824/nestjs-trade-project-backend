@@ -1,4 +1,4 @@
 export enum UserRoleType {
-  ADMIN = 'admin',
-  USER = 'user',
+  ADMIN = 'admin', // 어드민
+  USER = 'user', // 일반 유저
 }
