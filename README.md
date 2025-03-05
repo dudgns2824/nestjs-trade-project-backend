@@ -33,3 +33,10 @@ src/
 │── main.ts      
 │── app.module.ts      
 ```
+
+## 명명 규칙
+```
+파일 이름이 두 의미로 띄워서 만들어야 할 경우 example) userRole.ts      
+ -> user-role.ts 중간에 하이픈 넣어서 명명      
+database는 한 단어이므로 database.ts      
+```
