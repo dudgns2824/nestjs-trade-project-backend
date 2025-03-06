@@ -18,7 +18,7 @@ export class QueryJwtService implements QueryJwtUseCase {
   ): string {
     return tokenType == TokenType.ACCESS
       ? this.jwtService.sign(
-          { id: userIdx, username: userName },
+          { id: userIdx },
           {
             expiresIn: this.configService.get<string>(
               'ACCESS_TOKEN_VALID_TIME_MS',
@@ -26,7 +26,7 @@ export class QueryJwtService implements QueryJwtUseCase {
           },
         )
       : this.jwtService.sign(
-          { id: userIdx, username: userName },
+          { id: userIdx },
           {
             expiresIn: this.configService.get<string>(
               'REFRESH_TOKEN_VALID_TIME_MS',
